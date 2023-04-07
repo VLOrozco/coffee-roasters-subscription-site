@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+
+#container {
+  background-color: #F2F2F2;
+  padding: 7.3% 6%;
+}
+
+/* header section */
+header {
+  margin-bottom: 9.3em;
+}
+
+#logo {
+  margin-bottom: 1.3rem;
+}
+
+header h1 {
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 48px;
+}
