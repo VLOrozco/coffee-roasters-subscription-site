@@ -29,3 +29,110 @@ header h1 {
   font-size: 56px;
   line-height: 48px;
 }
+
+/* color system */
+#color-system {
+  padding-bottom: 1em;
+  margin-bottom: 9em;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: space-between;
+}
+  .flexbox2 {
+    margin-top: 5em;
+  }
+
+.color {
+  width: 350px;
+  height: 204px;
+  margin: 0 1.3em 0 0;
+}
+
+.color-box {
+  background-color: #0e8f84;
+
+  max-width: 350px;
+  height: 100px;
+  padding: 0 1em 20px 1em;
+  border-radius: 8px;
+
+  /* flexbox */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  /* typography */
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+  #dark-cyan .color-box {
+    background-color: #0e8f84;
+  }
+
+  #dark-grey-blue .color-box {
+    background-color: #333D4B;
+  }
+
+  #pale-orange .color-box {
+    background-color: #FDD6BA;
+    color: #333D4B;
+  }
+    #pale-orange .color-name {
+      color: #333D4B;mix-blend-mode: normal;
+      opacity: 0.25;
+    }
+
+    #light-cream .color-box {
+    background-color: #FEFCF7;
+    color: #333D4B;
+  }
+    #light-cream .color-name {
+      color: #333D4B;mix-blend-mode: normal;
+      opacity: 0.25;
+    }
+
+    #grey .color-box {
+    background-color: #83888F;
+  }
+
+.color-name {
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.color-nums {
+  /* flexbox */
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5em;
+}
+
+.rgb,
+.hsl {
+  /* flexbox */
+  display: flex;
+  justify-content: flex-start;
+
+  /* font */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+  .rgb {
+    margin-bottom: 1em;
+  }
+    .rgb p:nth-child(2n),
+    .hsl p:nth-child(2n) {
+      margin-left: 3em;
+    }
