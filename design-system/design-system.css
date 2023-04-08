@@ -527,3 +527,78 @@ header h1 {
 #option-active p {
   color: #FFF;
 }
+
+/* accordion menu */
+#accordion-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+  #accordion-menu > div {
+    margin-bottom: 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+#menu-closed-default,
+#menu-closed-hover,
+#menu-closed-disabled,
+#menu-opened-default,
+#menu-opened-hover {
+  width: 340px;
+  margin: 0 40px;
+}
+
+#menu-closed-default h2,
+#menu-closed-hover h2,
+#menu-closed-disabled h2,
+#menu-opened-default h2,
+#menu-opened-hover h2 {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height, or 120% */
+  color: #83888F;
+}
+#menu-closed-disabled h2 {
+  color: #c1c3c7;
+}
+
+#menu-closed-default h2 svg,
+#menu-closed-hover h2 svg,
+#menu-closed-disabled h2 svg,
+#menu-opened-default h2 svg,
+#menu-opened-hover h2 svg {
+  padding-left: 40px;
+  padding-bottom: 8px;
+}
+
+#menu-opened-default h2 svg,
+#menu-opened-hover h2 svg {
+  transform: rotate(180deg);
+  padding: 0;
+  padding-top: 8px;
+  padding-right: 40px;
+  padding-left: 0;
+}
+
+#accordion-menu-default,
+#accordion-menu-hover,
+#accordion-menu-disabled {
+  cursor: pointer;
+}
+
+#accordion-menu-default:hover svg path,
+#accordion-menu-default:hover,
+#accordion-menu-hover svg path,
+#accordion-menu-hover svg path {
+  fill: #66D2CF;
+}
+
+#accordion-menu-disabled svg path {
+  fill: #87c3c1;
+}
