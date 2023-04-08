@@ -136,3 +136,77 @@ header h1 {
     .hsl p:nth-child(2n) {
       margin-left: 3em;
     }
+
+/* typography */
+#typography {
+  background-color: skyblue;
+}
+
+#fonts {
+  display: flex;
+}
+
+#fraunces {
+  background-color: #0E8784;
+  border-radius: 8px 0 0 8px;
+  width: 41.6em; /* 665px */
+  padding: 3%;
+}
+
+#fraunces h1 {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 72px;
+  /* identical to box height, or 129% */
+  color: #FFFFFF;
+}
+
+#fraunces p {
+  min-width: 20em; /* 320px */
+  max-width: 28em; /* 448px */
+  word-break: break-word;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 32px;
+  /* or 160% */
+  letter-spacing: 8.33333px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+#barlow {
+  background-color: #333D4B;
+  border-radius: 0 8px 8px 0;
+  width: 27.88em; /* 446px */
+  padding: 3%;
+}
+
+#barlow h1 {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 72px;
+  /* identical to box height, or 129% */
+  color: #FFFFFF;
+}
+
+#barlow p {
+  width: 350px;
+  word-break: break-word;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 32px;
+  /* or 229% */
+  letter-spacing: 5.83333px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
