@@ -46,3 +46,65 @@ h4 {
   line-height: 32px;
 }
 
+/* Header styles */
+header {
+  position: relative;
+  padding-top: 32px;
+}
+
+/* Logo */
+#logo {
+  padding-left: 24px;
+  width: 180px;
+}
+
+#logo img {
+  width: inherit;
+}
+
+/* Navigation icons */
+#hamburger-icon,
+#close-icon {
+  width: 16px;
+  position: absolute;
+  top: 2.15rem;
+  right: 24px;
+}
+
+/* HEADER Navbar */
+#navbar-menu {
+  padding-top: 60px;
+}
+#navbar-list {
+  width: 100vw;
+  height: 100vh;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+}
+  #navbar-list li {
+    margin: 0.7rem 0;
+  }
+  #navbar-list li:nth-child(2n) {
+    margin: 21px 0;
+  }
+    #navbar-list a {
+      text-decoration: none;
+      /* mobile typography */
+      font-family: 'Fraunces';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      color: #333D4B;
+    }
+
+/* Mobile hide menu and close-icon */
+#navbar-menu,
+#close-icon {
+  display: none;
+}
+
