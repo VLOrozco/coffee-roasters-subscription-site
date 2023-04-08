@@ -138,9 +138,9 @@ header h1 {
     }
 
 /* typography */
-#typography {
+/* #typography {
   background-color: skyblue;
-}
+} */
 
 #fonts {
   display: flex;
@@ -210,3 +210,142 @@ header h1 {
   mix-blend-mode: normal;
   opacity: 0.6;
 }
+
+#text {
+  margin-top: 4.5em;
+  display: flex;
+}
+
+#headings {
+  width: 41.6em; /* 665px */
+}
+
+#body-text {
+  width: 27.88em; /* 446px */
+}
+
+.typography-headings {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 28px;
+}
+
+.heading-type {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  color: #333D4B;
+  margin-right: 1em;
+}
+
+.font-specifics {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  color: #333D4B;
+}
+
+.margin-top {
+  margin-top: 3em;
+}
+.margin-bottom {
+  margin-bottom: .7em;
+}
+
+#big-title {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 72px;
+  /* or 48% */
+  text-transform: lowercase;
+  color: #83888F;
+}
+
+#h1 {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  /* or 100% */
+  color: #333D4B;
+}
+
+#h2 {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  /* or 120% */
+  color: #333D4B;
+}
+
+#h3 {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  /* or 112% */
+  color: #333D4B;
+}
+
+#h4 {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
+  color: #333D4B;
+}
+
+#text.body-text {
+  margin-top: 1.5em;
+
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  color: #333D4B;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+/* Navbar */
+#navigation-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#navigation-menu a {
+  margin: 0 32px 0 0;
+  text-decoration: none;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888F;
+  cursor: pointer;
+}
+  #navigation-menu a:hover,
+  #navigation-menu a:focus {
+    color: #FEFCF7;
+  }
