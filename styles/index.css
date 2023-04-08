@@ -24,3 +24,25 @@ p {
   padding: 0;
 }
 
+/* General typography */
+body {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #333D4B;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+}
+
