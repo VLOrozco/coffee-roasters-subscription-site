@@ -108,3 +108,83 @@ header {
   display: none;
 }
 
+/* Hero section */
+main {
+  margin-top: 30px;
+  padding: 5%;
+  position: relative;
+}
+
+#hero-image {
+  min-width: 250px;
+  height: 500px;
+
+  background-image: url("../images/home/mobile/image-hero-coffeepress.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 10px; 
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 10px; 
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 10px;
+
+  z-index: 1;
+}
+
+#hero {
+  position: absolute;
+  top: 22%;
+  width: 85%;
+  left: 8%;
+  z-index: 2;
+}
+
+#hero h1 {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #FEFCF7;
+  margin-bottom: 20px;
+}
+  @media screen and (min-width: 324px) {
+    #hero h1 {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 24px;
+    }
+  }
+
+#hero div {
+  max-width: 445px;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+button.primary-btn {
+  width: 217px;
+  height: 56px;
+  background: #0E8784;
+  border: none;
+  border-radius: 6px;
+
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
+  text-align: center;
+  color: #FEFCF7;
+
+  cursor: pointer;
+}
+  button.primary-btn:hover,
+  button.primary-btn:focus {
+    background-color: #66D2CF;
+  }
+
