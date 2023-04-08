@@ -9,7 +9,7 @@ body {
 }
 
 #container {
-  background-color: #F2F2F2;
+  background-color: #FFF;
   padding: 7.3% 6%;
 }
 
@@ -349,3 +349,181 @@ header h1 {
   #navigation-menu a:focus {
     color: #FEFCF7;
   }
+
+/* buttons */
+#buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 10em 0;
+}
+
+.heading-type-btns {
+  margin-bottom: 1.5em;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+  color: #333D4B;
+  text-align: center;
+}
+
+#primary-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+  #primary-buttons > div {
+    margin-bottom: 10em;
+    display: flex;
+    flex-direction: column;
+  }
+
+#default-btn button {
+  width: 217px;
+  height: 56px;
+  background: #0E8784;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
+  text-align: center;
+  color: #FEFCF7;
+
+  cursor: pointer;
+}
+  #default-btn button:hover,
+  #default-btn button:focus {
+    background-color: #66D2CF;
+  }
+
+#hover-btn button {
+  width: 217px;
+  height: 56px;
+  background: #66D2CF;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
+  text-align: center;
+  color: #FEFCF7;
+
+  cursor: pointer;
+}
+
+#disabled-btn button {
+  width: 217px;
+  height: 56px;
+  background: #E2DEDB;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
+  text-align: center;
+  color: #FEFCF7;
+
+  cursor: pointer;
+}
+
+/* options */
+#big-selection-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+  #big-selection-btns > div {
+    margin-bottom: 10em;
+    display: flex;
+    flex-direction: column;
+  }
+
+#option-default button,
+#option-hover button,
+#option-active button {
+  width: 228px;
+  height: 250px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 0.5em;
+  background: #F4F1EB;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 28px;
+}
+
+#option-default h4,
+#option-hover h4,
+#option-active h4 {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  color: #333D4B;
+  text-align: left;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  pointer-events: none;
+}
+
+#option-default p,
+#option-hover p,
+#option-active p {
+  width: 172px;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  color: #333D4B;
+  text-align: left;
+  pointer-events: none;
+}
+  #option-default button:hover {
+    background: #FDD6BA;
+  }
+  #option-default button:active {
+    background: #0E8784;
+  }
+  #option-default button:active > h4,
+  #option-default button:active > p {
+    color: #FFF;
+  }
+
+#option-hover button {
+  background: #FDD6BA;
+}
+#option-active button {
+  background: #0E8784;
+}
+
+#option-active h4,
+#option-active p {
+  color: #FFF;
+}
