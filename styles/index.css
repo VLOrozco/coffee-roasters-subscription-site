@@ -220,3 +220,97 @@ section #h1 {
   .coffee-collection:last-child {
     margin-bottom: 7.5rem;
   }
+
+/* Role section */
+#role {
+  position: relative;
+}
+  .background-clr {
+    width: 85%;
+    height: 902px;
+    position: absolute;
+    background-color: #2C343E;
+    border-radius: 10px;
+    left: 8%;
+    z-index: 1;
+  }
+
+#role-container {
+  position: relative;
+  padding-top: 3.85rem;
+  z-index: 2;
+  width: 75%;
+  margin: auto;
+}
+  #role .role-heading h2 {
+    font-size: 28px;
+    line-height: 28px;
+    color: #FEFCF7;
+    padding-bottom: 1.5rem;
+  }
+  #role .role-heading p {
+    max-width: 540px;
+    margin: auto;
+    padding-bottom: 2rem;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+.roles {
+  margin-top: 2rem;
+}
+  .roles .card {
+    width: 279px;
+    height: 240px;
+    margin: 24px 0;
+    padding: 72px 0;
+    background: #0E8784;
+    border-radius: 8px;
+  }
+  .roles h3 {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #FEFCF7;
+    margin-top: 3rem;
+  }
+  .roles p {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FEFCF7;
+    margin-top: 1.7rem;
+  }
+
+
+/* FOOTER Navbar */
+#footer-navbar-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+#footer-navbar-list a {
+  margin: auto;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888F;
+  cursor: pointer;
+}
+  .footer-content #navigation-menu a:hover,
+  .footer-content #navigation-menu a:focus {
+    color: #FEFCF7;
+  }
