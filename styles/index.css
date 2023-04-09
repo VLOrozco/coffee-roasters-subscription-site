@@ -443,5 +443,27 @@ section h1 {
     .navbar-list a:focus {
       color: #333D4B;
     }
+/* main and hero section media query @ 768px */
+main {
+  margin-top: 6px;
+}
+.hero-image {
+  background-image: url("../images/home/tablet/image-hero-coffeepress.jpg");
+}
+.hero {
+  top: 25.2%;
+  left: 15.65%;
+  width: 50%;
+}
+.hero h1 {
+  font-size: 48px;
+  line-height: 47px;
+  margin-bottom: 25px;
+}
+.hero div {
+  margin-left: 0;
+  margin-bottom: 38px;
+  width: 100%;
+}
 
 }
