@@ -268,25 +268,17 @@ section #h1 {
     background: #0E8784;
     border-radius: 8px;
   }
-  .roles h3 {
-    font-family: 'Fraunces';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
-    text-align: center;
+  .roles h3,
+  .roles p {
     color: #FEFCF7;
+    margin: auto;
+  }
+  .roles h3 {
     margin-top: 3rem;
   }
   .roles p {
-    font-family: 'Barlow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 25px;
-    text-align: center;
-    color: #FEFCF7;
     margin-top: 1.7rem;
+    width: 200px;
   }
 
 
