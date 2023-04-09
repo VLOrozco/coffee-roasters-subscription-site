@@ -1,6 +1,7 @@
 :root {
   font-size: 16px;
   background-color: #fefcf7;
+  overflow-x: hidden;
 }
 /* General reset & styles */
 body {
@@ -9,6 +10,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-color: #fefcf7;
+  scroll-behavior: smooth;
 }
 
 div,
@@ -22,6 +24,7 @@ h3,
 p {
   margin: 0;
   padding: 0;
+  margin: auto;
 }
 
 /* General typography */
@@ -130,24 +133,23 @@ main {
   -moz-border-radius: 10px; 
   /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
   border-radius: 10px;
-
   z-index: 1;
 }
 
 #hero {
+  width: 85%;
   position: absolute;
   top: 22%;
-  width: 85%;
   left: 8%;
   z-index: 2;
 }
 
 #hero h1 {
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 30px;
   text-align: center;
   color: #FEFCF7;
-  margin-bottom: 20px;
 }
   @media screen and (min-width: 324px) {
     #hero h1 {
@@ -158,11 +160,12 @@ main {
   }
 
 #hero div {
+  width: 90%;
   max-width: 445px;
+  margin-bottom: 40px;
   color: #FEFCF7;
   mix-blend-mode: normal;
   opacity: 0.8;
-  margin-bottom: 40px;
 }
 
 button.primary-btn {
@@ -214,7 +217,6 @@ section #h1 {
   }
   .coffee-collection p {
     max-width: 282px;
-    margin: auto;
     margin-bottom: 3.6rem;
   }
   .coffee-collection:last-child {
@@ -229,28 +231,26 @@ section #h1 {
     width: 85%;
     height: 902px;
     position: absolute;
+    left: 8%;
     background-color: #2C343E;
     border-radius: 10px;
-    left: 8%;
     z-index: 1;
   }
 
 #role-container {
-  position: relative;
-  padding-top: 3.85rem;
-  z-index: 2;
   width: 75%;
-  margin: auto;
+  padding-top: 3.85rem;
+  position: relative;
+  z-index: 2;
 }
   #role .role-heading h2 {
+    padding-bottom: 1.5rem;
     font-size: 28px;
     line-height: 28px;
     color: #FEFCF7;
-    padding-bottom: 1.5rem;
   }
   #role .role-heading p {
-    max-width: 540px;
-    margin: auto;
+    max-width: 540px;    
     padding-bottom: 2rem;
     color: #FEFCF7;
     mix-blend-mode: normal;
@@ -263,7 +263,7 @@ section #h1 {
   .roles .card {
     width: 279px;
     height: 240px;
-    margin: 24px 0;
+    margin: 24px auto;
     padding: 72px 0;
     background: #0E8784;
     border-radius: 8px;
@@ -271,7 +271,6 @@ section #h1 {
   .roles h3,
   .roles p {
     color: #FEFCF7;
-    margin: auto;
   }
   .roles h3 {
     margin-top: 3rem;
@@ -281,18 +280,73 @@ section #h1 {
     width: 200px;
   }
 
+/* Process section */
+#process {
+  padding-top: 7rem;
+  padding-bottom: 7.5rem;
+}
+  #process h3 {
+    color: #83888F;
+    margin-bottom: 80px;
+  }
 
-/* FOOTER Navbar */
+.hr-decor {
+  min-width: 497px;
+  max-width: 760px;
+  display: none;
+}
+
+.big-title {
+  font-family: 'Fraunces';
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FDD6BA;
+  margin-bottom: 1.5rem;
+}
+
+.step h2 {
+  margin-bottom: 1.5rem;
+}
+
+.step p {
+  width: 315px;  
+  margin-bottom: 3.5rem;
+}
+  .step p:last-child {
+    margin-bottom: 4.9rem;
+  }
+
+/* Footer */
+.footer-content {
+  background-color: #2C343E;
+  min-width: 327px;
+  max-width: 85%;
+  height: 346px;
+  margin-bottom: 72px;
+  padding-top: 54px;
+}
+#footer .footer-logo {
+  width: 86%;
+  margin: auto;
+  margin-bottom: 33px;
+}
+  #footer .footer-logo .white-txt {
+    fill: #fff;
+  }
+
+/* Footer Navbar */
 #footer-navbar-list {
+  height: 105px;
+  margin-bottom: 43px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
 }
 
 #footer-navbar-list a {
-  margin: auto;
   text-decoration: none;
   font-weight: 700;
   font-size: 12px;
@@ -302,7 +356,20 @@ section #h1 {
   color: #83888F;
   cursor: pointer;
 }
-  .footer-content #navigation-menu a:hover,
-  .footer-content #navigation-menu a:focus {
+  .footer-content #footer-navbar-list a:hover,
+  .footer-content #footer-navbar-list a:focus {
     color: #FEFCF7;
+  }
+
+#social-links {
+  width: 122px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  #social-links svg path:hover,
+  #social-links svg path:active,
+  #social-links svg path:focus {
+    fill: #fdd6b9;
   }
