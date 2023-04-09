@@ -1,6 +1,5 @@
 :root {
   font-size: 16px;
-  background-color: #fefcf7;
   overflow-x: hidden;
 }
 /* General reset & styles */
@@ -43,7 +42,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Fraunces';
+  font-family: 'Fraunces', serif;
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
@@ -96,7 +95,6 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   background: linear-gradient(180deg, #FEFCF7 28%, rgba(254, 252, 247, 0.504981));
-
 }
   .navbar-list li {
     margin: 0.7rem 0;
@@ -107,7 +105,7 @@ header {
     .navbar-list a {
       text-decoration: none;
       /* mobile typography */
-      font-family: 'Fraunces';
+      font-family: 'Fraunces', serif;
       font-style: normal;
       font-weight: 900;
       font-size: 24px;
@@ -165,7 +163,6 @@ main.nav-show {
   margin-bottom: 20px;
   font-size: 30px;
   line-height: 30px;
-  text-align: center;
   color: #FEFCF7;
 }
   @media screen and (min-width: 324px) {
@@ -192,13 +189,11 @@ button.primary-btn {
   border: none;
   border-radius: 6px;
 
-  font-family: 'Fraunces';
+  font-family: 'Fraunces', serif;
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
   line-height: 25px;
-  /* identical to box height, or 139% */
-  text-align: center;
   color: #FEFCF7;
 
   cursor: pointer;
@@ -260,13 +255,13 @@ section h1 {
   position: relative;
   z-index: 2;
 }
-  #role div h2 {
+  .role-container .role-heading h2 {
     padding-bottom: 1.5rem;
     font-size: 28px;
     line-height: 28px;
     color: #FEFCF7;
   }
-  #role div p {
+  .role-container .role-heading p {
     max-width: 540px;    
     padding-bottom: 2rem;
     color: #FEFCF7;
@@ -314,7 +309,7 @@ section h1 {
 }
 
 .big-title {
-  font-family: 'Fraunces';
+  font-family: 'Fraunces', serif;
   font-weight: 900;
   font-size: 72px;
   line-height: 72px;
@@ -390,3 +385,63 @@ section h1 {
   .social-links svg path:focus {
     fill: #fdd6b9;
   }
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .hero,
+  .collection-item h3,
+  .collection-item p,
+  .roles h3,
+  .roles p,
+  #process {
+    text-align: left;
+  }
+  /* header media query w/logo and navbar menu  @ 768px */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 39px 0;
+  }
+  #logo {
+    width: 236px;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+  .navbar-menu {
+    display: inline-block;
+    padding-top: 0;
+  }
+  .navbar-list {
+    width: 290px;
+    height: 20px;
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-list li,
+  .navbar-list li:nth-child(2n) {
+    margin: 0 0 10px 0;
+  }
+  .navbar-list a {
+    /* tablet & desktop typography */
+    font-family: 'Barlow';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+    cursor: pointer;
+  }
+    .navbar-list a:hover,
+    .navbar-list a:focus {
+      color: #333D4B;
+    }
+
+}
