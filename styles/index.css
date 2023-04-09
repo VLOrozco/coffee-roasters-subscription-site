@@ -11,6 +11,7 @@ body {
   overflow-x: hidden;
   background-color: #fefcf7;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 div,
@@ -57,7 +58,7 @@ header {
 
 /* Logo */
 #logo {
-  padding-left: 24px;
+  margin-left: 24px;
   width: 180px;
 }
 
@@ -66,34 +67,44 @@ header {
 }
 
 /* Navigation icons */
-#hamburger-icon,
-#close-icon {
+.hamburger-icon,
+.close-icon {
   width: 16px;
   position: absolute;
   top: 2.15rem;
   right: 24px;
+  pointer-events: all;
+}
+
+/* Mobile hide menu and close-icon */
+.navbar-menu,
+.close-icon {
+  display: none;
 }
 
 /* HEADER Navbar */
-#navbar-menu {
+.navbar-menu {
   padding-top: 60px;
 }
-#navbar-list {
+.navbar-list {
+  position: absolute;
+  z-index: 99;
   width: 100vw;
   height: 100vh;
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+  background: linear-gradient(180deg, #FEFCF7 28%, rgba(254, 252, 247, 0.504981));
+
 }
-  #navbar-list li {
+  .navbar-list li {
     margin: 0.7rem 0;
   }
-  #navbar-list li:nth-child(2n) {
+  .navbar-list li:nth-child(2n) {
     margin: 21px 0;
   }
-    #navbar-list a {
+    .navbar-list a {
       text-decoration: none;
       /* mobile typography */
       font-family: 'Fraunces';
@@ -105,9 +116,12 @@ header {
       color: #333D4B;
     }
 
-/* Mobile hide menu and close-icon */
-#navbar-menu,
-#close-icon {
+/* Items to toggle */
+.close-icon.show,
+.navbar-menu.show {
+  display: block;
+}
+.hamburger-icon.hide {
   display: none;
 }
 
@@ -118,7 +132,7 @@ main {
   position: relative;
 }
 
-#hero-image {
+.hero-image {
   min-width: 250px;
   height: 500px;
 
@@ -135,8 +149,11 @@ main {
   border-radius: 10px;
   z-index: 1;
 }
+main.nav-show {
+  margin-top: -1rem;
+}
 
-#hero {
+.hero {
   width: 85%;
   position: absolute;
   top: 22%;
@@ -144,7 +161,7 @@ main {
   z-index: 2;
 }
 
-#hero h1 {
+.hero h1 {
   margin-bottom: 20px;
   font-size: 30px;
   line-height: 30px;
@@ -152,14 +169,14 @@ main {
   color: #FEFCF7;
 }
   @media screen and (min-width: 324px) {
-    #hero h1 {
+    .hero h1 {
       font-size: 40px;
       line-height: 40px;
       margin-bottom: 24px;
     }
   }
 
-#hero div {
+.hero div {
   width: 90%;
   max-width: 445px;
   margin-bottom: 40px;
@@ -196,7 +213,7 @@ button.primary-btn {
   margin-top: 5.9rem;
 }
 
-section #h1 {
+section h1 {
   font-size: 40px;
   line-height: 72px;
   background: -webkit-linear-gradient(#83888F, #eee);
@@ -237,19 +254,19 @@ section #h1 {
     z-index: 1;
   }
 
-#role-container {
+.role-container {
   width: 75%;
   padding-top: 3.85rem;
   position: relative;
   z-index: 2;
 }
-  #role .role-heading h2 {
+  #role div h2 {
     padding-bottom: 1.5rem;
     font-size: 28px;
     line-height: 28px;
     color: #FEFCF7;
   }
-  #role .role-heading p {
+  #role div p {
     max-width: 540px;    
     padding-bottom: 2rem;
     color: #FEFCF7;
@@ -336,7 +353,7 @@ section #h1 {
   }
 
 /* Footer Navbar */
-#footer-navbar-list {
+.footer-navbar-list {
   height: 105px;
   margin-bottom: 43px;
   display: flex;
@@ -346,7 +363,7 @@ section #h1 {
   list-style: none;
 }
 
-#footer-navbar-list a {
+.footer-navbar-list a {
   text-decoration: none;
   font-weight: 700;
   font-size: 12px;
@@ -356,20 +373,20 @@ section #h1 {
   color: #83888F;
   cursor: pointer;
 }
-  .footer-content #footer-navbar-list a:hover,
-  .footer-content #footer-navbar-list a:focus {
+  .footer-content .footer-navbar-list a:hover,
+  .footer-content .footer-navbar-list a:focus {
     color: #FEFCF7;
   }
 
-#social-links {
+.social-links {
   width: 122px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-  #social-links svg path:hover,
-  #social-links svg path:active,
-  #social-links svg path:focus {
+  .social-links svg path:hover,
+  .social-links svg path:active,
+  .social-links svg path:focus {
     fill: #fdd6b9;
   }
