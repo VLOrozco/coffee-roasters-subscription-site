@@ -681,9 +681,8 @@ section h1 {
 
   /* footer section */
   .footer-content{
-    width: 688px;
+    min-width: 688px;
     height: 215px;
-    outline: 1px solid pink;
   }
   #footer .footer-logo {
     margin-bottom: 1rem;
