@@ -660,25 +660,39 @@ section h1 {
   .step {
     margin-top: 3px;
   }
-  .step h2 {
-    font-size: 28px;
-    width: 180px;
-    margin-top: 2.5rem;
-    margin-left: 0;
-  }
-  .step p {
-    margin-top: 2.8rem;
-    margin-left: 0;
-    width: 205px;
-    margin-bottom: 0;
-  }
-  .step2 p {
-    width: 215px;
-  }
-  .step p:last-child {
-    margin-bottom: 2.7rem;
-  }
+    .step h2 {
+      font-size: 28px;
+      width: 180px;
+      margin-top: 2.5rem;
+      margin-left: 0;
+    }
+    .step p {
+      margin-top: 2.8rem;
+      margin-left: 0;
+      width: 205px;
+      margin-bottom: 0;
+    }
+    .step2 p {
+      width: 215px;
+    }
+    .step p:last-child {
+      margin-bottom: 2.7rem;
+    }
 
-
+  /* footer section */
+  .footer-content{
+    width: 688px;
+    height: 215px;
+    outline: 1px solid pink;
+  }
+  #footer .footer-logo {
+    margin-bottom: 1rem;
+  }
+  .footer-navbar-list {
+    flex-direction: row;
+    width: 283px;
+    height: 1.3rem;
+    margin-bottom: 4.35rem;
+  }
 
 }
