@@ -693,5 +693,62 @@ section h1 {
     height: 1.3rem;
     margin-bottom: 4.35rem;
   }
+}
+/* media query @ 768px  end */
+
+@media screen and (min-width: 1275px) {
+  .collection-item h3,
+  .collection-item p,
+  .roles h3,
+  .roles p {
+    text-align: center;
+  }
+
+  /* header media query w/logo and navbar menu  @ 1275px */
+  header {
+    width: 90%;
+    padding: 43px 80px 0 60px;
+    margin-bottom: 0;
+  }
+  #logo {
+    width: 260px;
+    margin-left: 10px;
+  }
+  .navbar-list a {
+    font-size: 13px;
+  }
+
+  /* main and hero section media query @ 1275px */
+  main {
+    margin-top: 0;
+    padding-top: 34px;
+  }
+  .hero-image {
+    margin-top: 0;
+    background-image: url("../images/home/desktop/image-hero-coffeepress.jpg");
+    height: 600px;
+  }
+  .hero {
+    top: 21.5%;
+    left: 10%;
+    width: 45%;
+  }
+    .hero h1 {
+      width: 505px;
+      margin-left: 0;
+      margin-bottom: 32px;
+      font-size: 72px;
+      line-height: 72px;
+      letter-spacing: 3px;
+      word-spacing: 3px;
+    }
+    .hero div {
+      width: 440px;
+      margin-bottom: 56px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
 
 }
+/* media query @ 1275px  end */
