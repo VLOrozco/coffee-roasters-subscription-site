@@ -597,8 +597,9 @@ section h1 {
 
   /* #process section  @ 768px media query */
   #process {
-    margin-left: 5%;
+    margin: auto;
     margin-bottom: 1.5rem;
+    width: 689px;
   }
   #process h3 {
     margin-bottom: 46px;
@@ -610,8 +611,9 @@ section h1 {
     align-items: flex-start;
     position: relative;
     margin-left: 0;
-    width: 520px;
     margin-bottom: 53px;
+    width: 520px;
+    
   }
   hr {
     width: 520px;
@@ -861,8 +863,8 @@ section h1 {
     }
 
   .steps {
-    margin-left: 1.3rem;
-    width: 94%;
+    margin-left: 2rem;
+    width: 1140px;
   }
     .step h2 {
       font-size: 32px;
@@ -878,5 +880,28 @@ section h1 {
     margin-left: 4.5rem;
   }
 
+  /* footer section @ 1275px media query */
+  .footer-content {
+    padding: 0 55px;
+    margin-bottom: 88px;
+    min-width: 1145px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #footer .footer-logo {
+    width: 236px;
+    margin: 0 0 0 2rem;
+  }
+
+  .footer-navbar-list {
+    margin: 0 0 0 -15.8rem;
+  }
+
+  .social-links {
+    margin: 0 1.5rem 0 0;
+  }
 }
 /* media query @ 1275px  end */
