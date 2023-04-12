@@ -832,5 +832,51 @@ section h1 {
       margin-top: 0.55rem;
       width: 90px;
     }
+
+  /* process section @ 1275px media query */
+  #process {
+    padding-top: 8.8rem;
+    margin: auto;
+    margin-bottom: 5rem;
+    width: 85%;
+  }
+
+  #process h3 {
+    margin-left: 4.5rem;
+    margin-bottom: 5.2rem;
+  }
+
+  .hr-decor,
+  hr {
+    width: 100%;
+  }
+    .hr-decor {
+      margin-left: 4.5rem;
+    }
+    .circle2 {
+      left: 50%;
+    }
+    .circle3 {
+      right: -4%;
+    }
+
+  .steps {
+    margin-left: 1.3rem;
+    width: 94%;
+  }
+    .step h2 {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    .step p {
+      font-size: 16px;
+      line-height: 26px;
+      width: 285px;
+    }
+
+  #process button {
+    margin-left: 4.5rem;
+  }
+
 }
 /* media query @ 1275px  end */
