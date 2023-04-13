@@ -1,0 +1,38 @@
+/* About Hero section */
+main {
+  margin-top: 14px;
+}
+
+.about-hero-image {
+  min-width: 250px;
+  height: 400px;
+
+  background-image: url("../images/about/mobile/image-hero-whitecup.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-border-radius: 10px;
+}
+
+.about-hero {
+  width: 85%;
+  position: absolute;
+  top: 30%;
+  left: 8%;
+}
+
+.about-hero h1 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  line-height: 28px;
+  color: #FEFCF7;
+}
+
+.about-hero div {
+  width: 90%;
+  max-width: 445px;
+  margin-bottom: 40px;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
