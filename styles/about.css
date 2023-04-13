@@ -45,7 +45,7 @@ main.nav-show {
 /* About - commitment section */
 #commitment {
   margin: auto;
-  margin-bottom: 198px;
+  margin-bottom: 196px;
   width: 90%;
 }
 
@@ -65,4 +65,44 @@ main.nav-show {
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-border-radius: 10px;
+}
+
+/* About - quality section */
+#quality {
+  position: relative;
+  margin: auto;
+  margin-bottom: 120px;
+  padding-top: 142px;
+  width: 90%;
+  height: 369px;
+  border-radius: 10px;
+  background-color: #2a3139;
+}
+
+.quality-image {
+  position: absolute;
+  top: -15%;
+  left: 7%;
+  width: 86%;
+  max-width: 573px;
+  height: 156px;
+
+  background-image: url("../images/about/mobile/image-quality.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-border-radius: 10px;
+}
+
+.quality-text {
+  width: 85%;
+  color: #FEFCF7;
+}
+.quality-text h2 {
+  font-size: 28px;
+  font-size: 28px;
+  margin-bottom: 21px;
+}
+.quality-text p {
+  opacity: 0.8;
 }
