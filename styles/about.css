@@ -1,6 +1,7 @@
 /* About Hero section */
 main {
   margin-top: 14px;
+  margin-bottom: 120px;
 }
 
 .about-hero-image {
@@ -12,6 +13,10 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-border-radius: 10px;
+}
+main.nav-show {
+  height: 100vh;
+  margin-top: -0.5rem;
 }
 
 .about-hero {
@@ -35,4 +40,29 @@ main {
   color: #FEFCF7;
   mix-blend-mode: normal;
   opacity: 0.8;
+}
+
+/* About - commitment section */
+#commitment {
+  margin: auto;
+  margin-bottom: 198px;
+  width: 90%;
+}
+
+.commitment-text h2 {
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 30px;
+}
+
+.commitment-image {
+  min-width: 250px;
+  height: 400px;
+  margin-bottom: 48px;
+
+  background-image: url("../images/about/mobile/image-commitment.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-border-radius: 10px;
 }
