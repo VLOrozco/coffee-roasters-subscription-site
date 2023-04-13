@@ -106,3 +106,41 @@ main.nav-show {
 .quality-text p {
   opacity: 0.8;
 }
+
+/* About - headquarters section */
+#headquarters {
+  margin-bottom: 120px;
+}
+
+#headquarters h3 {
+  color: #83888F;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  margin-bottom: 72px;
+}
+
+.hq-united-kingdom,
+.hq-canada {
+  margin-bottom: 80px;
+}
+
+.united-kingdom-image,
+.canada-image,
+.australia-image {
+  margin-bottom: 42px;
+}
+
+.hq-united-kingdom h2,
+.hq-canada h2,
+.hq-australia h2 {
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 22px;
+}
+
+.hq-united-kingdom p,
+.hq-canada p,
+.hq-australia p {
+  font-size: 16px;
+  line-height: 26px;
+}
