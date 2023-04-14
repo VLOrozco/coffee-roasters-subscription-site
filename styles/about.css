@@ -100,7 +100,6 @@ main.nav-show {
 }
 .quality-text h2 {
   font-size: 28px;
-  font-size: 28px;
   margin-bottom: 21px;
 }
 .quality-text p {
@@ -176,7 +175,7 @@ main.nav-show {
   /* About - commitment section @ min-width:768px */
   #commitment {
     display: flex;
-    margin-bottom: 173px;
+    margin-bottom: 258px;
   }
   .commitment-image {
     background-image: url("../images/about/tablet/image-commitment.jpg");
@@ -187,6 +186,26 @@ main.nav-show {
     width: 339px;
     margin-top: 8px;
     margin-left: 69px;
+  }
+
+  /* About - quality section @ min-width:768px */
+  #quality {
+    width: 688px;
+    height: 263px;
+    padding-top: 225px;
+  }
+  .quality-image {
+    top: -33%;
+    background-image: url("../images/about/tablet/image-quality.jpg");
+    width: 573px;
+    height: 320px;
+  }
+  .quality-text h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .quality-text p {
+    width: 538px;
   }
 
 }
