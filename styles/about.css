@@ -144,3 +144,33 @@ main.nav-show {
   font-size: 16px;
   line-height: 26px;
 }
+
+@media screen and (min-width: 768px) {
+  .about-hero,
+  .commitment-text,
+  .headquarters-address {
+    text-align: left;
+  }
+  #logo {
+    margin-left: 0;
+  }
+  main {
+    margin-top: 7px;
+  }
+  .about-hero-image {
+    background-image: url("../images/about/tablet/image-hero-whitecup.jpg");
+  }
+  .about-hero {
+    width: 55%;
+    top: 32.9%;
+    left: 9%;
+  }
+    .about-hero h1 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    .about-hero div {
+      width: 100%;
+    }
+
+}
