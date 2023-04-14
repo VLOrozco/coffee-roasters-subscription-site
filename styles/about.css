@@ -173,4 +173,20 @@ main.nav-show {
       width: 100%;
     }
 
+  /* About - commitment section @ min-width:768px */
+  #commitment {
+    display: flex;
+    margin-bottom: 173px;
+  }
+  .commitment-image {
+    background-image: url("../images/about/tablet/image-commitment.jpg");
+    width: 281px;
+    height: 470px;
+  }
+  .commitment-text {
+    width: 339px;
+    margin-top: 8px;
+    margin-left: 69px;
+  }
+
 }
