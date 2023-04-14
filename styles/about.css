@@ -147,7 +147,7 @@ main.nav-show {
 @media screen and (min-width: 768px) {
   .about-hero,
   .commitment-text,
-  .headquarters-address {
+  #headquarters {
     text-align: left;
   }
   #logo {
@@ -193,6 +193,7 @@ main.nav-show {
     width: 688px;
     height: 263px;
     padding-top: 225px;
+    margin-bottom: 144px;
   }
   .quality-image {
     top: -33%;
@@ -206,6 +207,28 @@ main.nav-show {
   }
   .quality-text p {
     width: 538px;
+  }
+
+  /* About - headquarters section @ min-width:768px */
+  #headquarters {
+    margin-left: 5%;
+    margin-bottom: 144px;
+    width: 688px;
+  }
+  .headquarters-address {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hq-united-kingdom,
+  .hq-canada,
+  .hq-australia {
+    margin: 0;
+  }
+  .hq-united-kingdom h2,
+  .hq-canada h2,
+  .hq-australia h2 {
+    font-size: 24px;
+    margin-bottom: 21px;
   }
 
 }
