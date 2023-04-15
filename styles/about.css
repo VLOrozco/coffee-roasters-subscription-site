@@ -238,9 +238,8 @@ main.nav-show {
     margin-bottom: 96px;
   }
   .about-hero-image {
-    width: 1280px;
+    min-width: 1280px;
     height: 450px;
-  
     background-image: url("../images/about/desktop/image-hero-whitecup.jpg");
   }
   .about-hero {
@@ -312,4 +311,24 @@ main.nav-show {
       font-size: 16px;
       line-height: 26px;
     }
+
+  /* About - headquarters section @ min-width:1300px */
+  #headquarters {
+    margin-bottom: 168px;
+    width: 1045px;
+  }
+  .united-kingdom-image,
+  .canada-image {
+    margin-bottom: 40px;
+  }
+  .australia-image {
+    margin-bottom: 45px;
+  }
+  .hq-united-kingdom h2,
+  .hq-canada h2,
+  .hq-australia h2 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 23px;
+  }
 }
