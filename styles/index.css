@@ -905,3 +905,9 @@ section h1 {
   }
 }
 /* media query @ 1275px  end */
+
+@media screen and (min-width: 1450px) {
+  header {
+    padding-left: 4.5%;
+  }
+}

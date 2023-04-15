@@ -334,3 +334,9 @@ main.nav-show {
   }
 }
 /* About section - media query @ 1300px  end */
+
+@media screen and (min-width: 1450px) {
+  header {
+    padding-left: 5%;
+  }
+}
