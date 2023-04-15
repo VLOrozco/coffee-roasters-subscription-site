@@ -211,7 +211,7 @@ main.nav-show {
 
   /* About - headquarters section @ min-width:768px */
   #headquarters {
-    margin-left: 5%;
+    margin: auto;
     margin-bottom: 144px;
     width: 688px;
   }
