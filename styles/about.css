@@ -13,6 +13,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 main.nav-show {
   height: 100vh;
