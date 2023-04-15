@@ -231,6 +231,7 @@ main.nav-show {
     margin-bottom: 21px;
   }
 }
+/* About section - media query @ 768px  end */
 
 @media screen and (min-width: 1300px) {
   main {
@@ -332,3 +333,4 @@ main.nav-show {
     margin-bottom: 23px;
   }
 }
+/* About section - media query @ 1300px  end */
