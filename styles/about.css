@@ -258,6 +258,9 @@ main.nav-show {
   }
 
   /* About - commitment section @ min-width:1300px */
+  #commitment {
+    margin-bottom: 210px;
+  }
   .commitment-image {
     background-image: url("../images/about/desktop/image-commitment.jpg");
     width: 445px;
