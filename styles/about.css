@@ -282,4 +282,34 @@ main.nav-show {
     line-height: 26px;
   }
 
+  /* About - quality section @ min-width:1300px */
+  #quality {
+    width: 1280px;
+    height: 387px;
+    padding-top: 87px;
+    margin-bottom: 168px;
+  }
+  .quality-image {
+    top: -88px;
+    right: -36.2rem;
+    background-image: url("../images/about/desktop/image-quality.jpg");
+    width: 445px;
+    height: 474px;
+  }
+  .quality-text {
+    width: 50%;
+    margin-top: 0;
+    margin-left: 85px;
+    text-align: left;
+  }
+    .quality-text h2 {
+      margin-bottom: 32px;
+      font-size: 40px;
+      line-height: 48px;
+    }
+    .quality-text p {
+      margin-left: 0;
+      font-size: 16px;
+      line-height: 26px;
+    }
 }
