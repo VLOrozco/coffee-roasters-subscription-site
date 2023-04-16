@@ -51,3 +51,23 @@ main {
   mix-blend-mode: normal;
   opacity: 0.8;
 }
+
+/* Process section */
+#process {
+  width: 100%;
+  height: 828px;
+  padding-top: 5rem;
+  margin-bottom: 120px;
+  background-color: #2C343E;
+  border-radius: 10px;
+}
+
+.step h2 {
+  font-size: 28px;
+  line-height: 32px;
+  color: #FFF;
+}
+.steps .step p {
+  color: #FFF;
+  margin-bottom: 3.5rem;
+}
