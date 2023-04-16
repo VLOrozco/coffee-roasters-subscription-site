@@ -52,7 +52,7 @@ main {
   opacity: 0.8;
 }
 
-/* Process section */
+/* Plan Process section */
 #process {
   width: 100%;
   height: 828px;
@@ -70,4 +70,118 @@ main {
 .steps .step p {
   color: #FFF;
   margin-bottom: 3.5rem;
+}
+
+/* Plan/Order section of Plan.html */
+#plan {
+  padding-bottom: 120px;
+}
+
+.plan-navigation {
+  display: none;
+}
+
+#all-options {
+  margin-bottom: 120px;
+}
+
+.option,
+.option-btns button,
+#order-summary {
+  text-align: left;
+}
+
+.option {
+  width: 328px;
+  margin-bottom: 96px;
+}
+  .option:first-child {
+    margin-top: 2px;
+  }
+
+.plan-q {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  .plan-q h2 {
+    line-height: 28px;
+    color: #83888F;
+    width: 240px;
+    margin-left: 0;
+  }
+  .arrow {
+    rotate: 180deg;
+  }
+
+.option-btns button {
+  border: none;
+  padding: 24px 25px;
+  background-color: #F4F1EB;
+  border-radius: 8px;
+  cursor: pointer;
+}
+  .option-btns button:nth-child(2n) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .option-btns button h3 {
+    color: #333D4B;
+    margin-bottom: 8px;
+  }
+
+  .option-btns button p {
+    width: 260px;
+    font-family: 'Barlow';
+    font-size:  16px;
+    line-height: 26px;
+    color: #333D4B;
+  }
+
+#order-summary {
+  width: 328px;
+  height: 277px;
+  padding: 32px 24px;
+  margin-bottom: 56px;
+  background-color: #2C343E;
+  border-radius: 10px;
+}
+  #order-summary div:first-child {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  #order-summary h3 {
+    width: 279px;
+    line-height: 40px;
+    color: #FFFFFF;
+  }
+  #order-summary h3 span {
+    color: #0E8784;
+  }
+
+/* button hover, focus and active states */
+@media (hover: hover) {
+  .option-btns button:hover {
+    background: #FDD6BA;
+  }
+
+  .option-btns button:active {
+    background: #0E8784;
+  }
+
+  .option-btns button:active > h3,
+  .option-btns button:active > p {
+    color: #FFF;
+  }
+}
+
+.option-btns button:focus {
+  background: #FDD6BA;
 }
