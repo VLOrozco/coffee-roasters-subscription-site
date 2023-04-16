@@ -198,10 +198,6 @@ button.primary-btn {
 
   cursor: pointer;
 }
-  button.primary-btn:hover,
-  button.primary-btn:focus {
-    background-color: #66D2CF;
-  }
 
 /* Collection section  */
 #collection {
@@ -368,10 +364,6 @@ section h1 {
   color: #83888F;
   cursor: pointer;
 }
-  .footer-content .footer-navbar-list a:hover,
-  .footer-content .footer-navbar-list a:focus {
-    color: #FEFCF7;
-  }
 
 .social-links {
   width: 122px;
@@ -380,11 +372,6 @@ section h1 {
   justify-content: space-between;
   align-items: center;
 }
-  .social-links svg path:hover,
-  .social-links svg path:active,
-  .social-links svg path:focus {
-    fill: #fdd6b9;
-  }
 
 @media screen and (min-width: 768px) {
   body {
@@ -440,10 +427,6 @@ section h1 {
     color: #83888F;
     cursor: pointer;
   }
-    .navbar-list a:hover,
-    .navbar-list a:focus {
-      color: #333D4B;
-    }
 
   /* main and hero section media query @ 768px */
   main {
@@ -910,4 +893,37 @@ section h1 {
   header {
     padding-left: 4.5%;
   }
+}
+
+@media (hover: hover) {
+  .navbar-list a:hover,
+  .navbar-list a:focus {
+    color: #333D4B;
+  }
+
+  button.primary-btn:hover {
+    background-color: #66D2CF;
+  }
+
+  .footer-content .footer-navbar-list a:hover {
+    color: #FEFCF7;
+  }
+
+  .social-links a svg path:hover,
+  .social-links a svg path:active {
+    fill: #fdd6b9;
+  }
+}
+
+button.primary-btn:focus {
+  background-color: #66D2CF;
+}
+
+.footer-content .footer-navbar-list a:focus {
+  color: #FEFCF7;
+}
+
+:focus {
+  outline: none;
+  box-shadow: 0 0 0 6px #0E8784;
 }
