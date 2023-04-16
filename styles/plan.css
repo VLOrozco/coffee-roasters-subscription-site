@@ -1,0 +1,53 @@
+/* Plan.html Main Hero section */
+main {
+  margin-top: 10.3px;
+  margin-bottom: 6.4rem;
+}
+
+.plan-hero-image {
+  min-width: 250px;
+  height: 400px;
+
+  background-image: url("../images/plan/mobile/image-hero-blackcup.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 10px; 
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 10px; 
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.plan-hero {
+  width: 85%;
+  position: absolute;
+  top: 27.8%;
+  left: 8%;
+  z-index: 2;
+}
+
+.plan-hero h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #FEFCF7;
+}
+  @media screen and (min-width: 324px) {
+    .plan-hero h1 {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 24px;
+    }
+  }
+
+.plan-hero div {
+  width: 90%;
+  max-width: 445px;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
