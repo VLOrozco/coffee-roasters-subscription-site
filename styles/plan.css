@@ -170,6 +170,10 @@ main {
   main {
     margin-top: 6px;
   }
+  .plan-hero-image {
+    background-image: url("../images/plan/tablet/image-hero-blackcup.jpg");
+  }
+
   .plan-hero {
     text-align: left;
     margin-top: 2.1rem;
