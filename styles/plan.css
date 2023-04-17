@@ -184,50 +184,103 @@ main {
       margin-left: 0;
       width: 398px;
     }
+  /* process section @ 768px media query */
+  #process {
+    height: 441px;
+    margin-bottom: 144px;
+  }
+  .hr-decor {
+    margin-top: 23px;
+    margin-left: 63px;
+  }
+  hr {
+    width: 440px;
+    margin-left: 15px;
+  }
+  .circle {
+    background-color: transparent;
+    animation: none;
+  }
+  .circle2 {
+    left: 44.8%;
+  }
+  .circle3 {
+    left: 75.8%;
+  }
 
-    #process {
-      height: 441px;
+  .steps {
+    margin-left: 4rem;
+  }
+    .steps .step {
+      margin: 0;
     }
-    .hr-decor {
-      margin-top: 23px;
-      margin-left: 63px;
+    .step.step2 {
+      margin: 0 10px;
     }
-    hr {
-      width: 440px;
-      margin-left: 15px;
+    .step.step3 {
+      margin-top: 2px;
     }
-    .circle {
-      background-color: transparent;
-      animation: none;
+    .steps .step p {
+      width: 223px;
     }
-    .circle2 {
-      left: 44.8%;
+    .step.step2 p {
+      width: 215px;
     }
-    .circle3 {
-      left: 75.8%;
+    .step.step3 p {
+      width: 204px;
     }
-  
-    .steps {
-      margin-left: 4rem;
+
+  /* #all-options section @ 768px media query */
+  #plan {
+    padding-bottom: 144px;
+  }
+
+  .option {
+    width: 689px;
+  }
+
+  .plan-q h2 {
+    width: 506px;
+    margin-bottom: 7px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  #all-options {
+    margin-bottom: 144px;
+  }
+  .option-btns {
+    display: flex;
+    margin-bottom: 101px;
+  }
+    .option-btns button {
+      width: 223px;
+      height: 250px;
+      padding: 0 24px;
     }
-      .steps .step {
-        margin: 0;
-      }
-      .step.step2 {
-        margin: 0 10px;
-      }
-      .step.step3 {
-        margin-top: 2px;
-      }
-      .steps .step p {
-        width: 223px;
-      }
-      .step.step2 p {
-        width: 215px;
-      }
-      .step.step3 p {
-        width: 204px;
-      }
+    .option-btns button:nth-child(2n) {
+      margin: 0 10px;
+    }
+    .option-btns button h3 {
+      margin-top: -3.05rem;
+      margin-bottom: 24px;
+    }
+    .option-btns button p {
+      width: 172px;
+    }
+
+  #order-summary {
+    width: 689px;
+    height: 180px;
+    padding: 0;
+    padding-top: 27px;
+    padding-left: 44px;
+    margin-bottom: 40px;
+  }
+
+  #order-summary h3 {
+    width: 602px;
+  }
 
 }
 
