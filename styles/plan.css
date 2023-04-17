@@ -185,6 +185,50 @@ main {
       width: 398px;
     }
 
+    #process {
+      height: 441px;
+    }
+    .hr-decor {
+      margin-top: 23px;
+      margin-left: 63px;
+    }
+    hr {
+      width: 440px;
+      margin-left: 15px;
+    }
+    .circle {
+      background-color: transparent;
+      animation: none;
+    }
+    .circle2 {
+      left: 44.8%;
+    }
+    .circle3 {
+      left: 75.8%;
+    }
+  
+    .steps {
+      margin-left: 4rem;
+    }
+      .steps .step {
+        margin: 0;
+      }
+      .step.step2 {
+        margin: 0 10px;
+      }
+      .step.step3 {
+        margin-top: 2px;
+      }
+      .steps .step p {
+        width: 223px;
+      }
+      .step.step2 p {
+        width: 215px;
+      }
+      .step.step3 p {
+        width: 204px;
+      }
+
 }
 
 /* button hover, focus and active states */
