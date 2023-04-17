@@ -166,6 +166,27 @@ main {
     color: #0E8784;
   }
 
+@media screen and (min-width: 768px) {
+  main {
+    margin-top: 6px;
+  }
+  .plan-hero {
+    text-align: left;
+    margin-top: 2.1rem;
+    margin-left: 3.7rem;
+  }
+    .plan-hero h1 {
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: 1px;
+    }
+    .plan-hero div {
+      margin-left: 0;
+      width: 398px;
+    }
+
+}
+
 /* button hover, focus and active states */
 @media (hover: hover) {
   .option-btns button:hover {
