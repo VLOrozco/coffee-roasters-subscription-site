@@ -285,7 +285,35 @@ main {
   #order-summary h3 {
     width: 602px;
   }
+}
 
+@media screen and (min-width: 1275px) {
+  #process {
+    max-width: 1280px;
+  }
+  hr {
+    width: 623px;
+    margin-left: 100.5px;
+  }
+    .circle1 {
+      left: 11%;
+    }
+    .circle2 {
+      left: 53%;
+    }
+    .circle3 {
+      left: 87%;
+    }
+  .steps {
+    margin-left: 9.2rem;
+  }
+    .step h2 {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    .step.step2 {
+      margin: 0 95px;
+    }
 }
 
 /* button hover, focus and active states */
