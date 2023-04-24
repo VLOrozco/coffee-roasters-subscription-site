@@ -27,6 +27,12 @@ p {
   margin: auto;
 }
 
+@media (prefers-reduced-motion) {
+  .circle {
+    animation: none;
+  }
+}
+
 /* General typography */
 body {
   font-family: 'Barlow';
@@ -612,18 +618,21 @@ section h1 {
     border-radius: 50%;
   }
     .circle1 {
-      -webkit-animation: circleColor 2000ms ease-in-out 1000ms 1 reverse;
-      animation: circleColor 2000ms ease-in-out 1000ms 1 reverse;
+      -webkit-animation: circleColor 2000ms ease-in-out 1000ms 1;
+      animation: circleColor 2000ms ease-in-out 1000ms 1;
+      animation-fill-mode: forwards;
     }
     .circle2 {
       left: 46%;
-      -webkit-animation: circleColor circleColor 3000ms ease-in-out 2000ms 1 reverse;
-      animation: circleColor 3000ms ease-in-out 2000ms 1 reverse;
+      -webkit-animation: circleColor circleColor 3000ms ease-in-out 2000ms 1;
+      animation: circleColor 3000ms ease-in-out 2000ms 1;
+      animation-fill-mode: forwards;
     }
     .circle3 {
       right: 0;
-      -webkit-animation: circleColor 4000ms ease-in-out 3000ms 1 reverse;
-      animation: circleColor 4000ms ease-in-out 3000ms 1 reverse;
+      -webkit-animation: circleColor 4000ms ease-in-out 3000ms 1;
+      animation: circleColor 4000ms ease-in-out 3000ms 1;
+      animation-fill-mode: forwards;
     }
     @keyframes circleColor {
       0% { background-color: #fefcf7; }

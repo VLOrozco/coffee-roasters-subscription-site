@@ -193,23 +193,29 @@ main {
     height: 441px;
     margin-bottom: 144px;
   }
-  .hr-decor {
+  .hr-decor.decor2 {
     margin-top: 23px;
     margin-left: 63px;
   }
-  hr {
+  .hr-decor.decor2 hr {
     width: 440px;
     margin-left: 15px;
   }
   .circle {
     background-color: transparent;
-    animation: none;
   }
   .circle2 {
     left: 44.8%;
   }
   .circle3 {
     left: 75.8%;
+  }
+  @keyframes circleColor {
+    0% { background-color: transparent; }
+    25% { background-color: #1787833d; }
+    50% { background-color: #1787837c; }
+    75% { background-color: #178783a1; }
+    100% { background-color: #178784; }
   }
 
   .steps {
@@ -287,33 +293,87 @@ main {
   }
 }
 
-@media screen and (min-width: 1275px) {
+@media screen and (min-width: 1150px) {
   #process {
     max-width: 1280px;
+    height: 452px;
   }
-  hr {
-    width: 623px;
-    margin-left: 100.5px;
+  .hr-decor.decor2 hr {
+    width: 1500px;
+    margin-left: 43px;
+    margin-right: -50px;
   }
     .circle1 {
-      left: 11%;
+      left: 4.2%;
     }
     .circle2 {
-      left: 53%;
+      left: 54%;
     }
     .circle3 {
-      left: 87%;
+      left: 104%;
     }
+
   .steps {
-    margin-left: 9.2rem;
+    margin-left: 5.85rem;
   }
-    .step h2 {
+    .steps .step h2 {
       font-size: 32px;
       line-height: 36px;
+    }
+    .steps .step p {
+      width: 285px;
     }
     .step.step2 {
       margin: 0 95px;
     }
+}
+
+.hr-decor hr {
+  width: 1500px;
+  margin-left: 43px;
+  margin-right: -50px;
+}
+
+@media screen and (min-width: 1250px) {
+  header {
+    margin-top: 3px;
+  }
+    header #logo {
+      width: 236px;
+    }
+
+  main {
+    margin-top: 0;
+    margin-bottom: 6rem;
+  }
+    .plan-hero-image {
+      max-width: 1280px;
+      height: 450px;
+      background-image: url("../images/plan/desktop/image-hero-blackcup.jpg");
+    }
+    .plan-hero {
+      top: 24.5%;
+    }
+    .plan-hero h1 {
+      font-size: 72px;
+      line-height: 72px;
+      margin-bottom: 32px;
+    }
+    .plan-hero div {
+      width: 445px;
+      font-size: 15px;
+      line-height: 26px;
+    }
+
+  .plan-navigation {
+    display: block;
+  }
+
+  .plan-q h2 {
+    width: 632px;
+    font-size: 40px;
+  }
+
 }
 
 /* button hover, focus and active states */
