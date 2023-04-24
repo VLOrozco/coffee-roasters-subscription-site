@@ -467,13 +467,11 @@ main {
 }
 
 @media screen and (min-width: 1400px) {
-  header {
-    width: 1280px;
-    margin: auto;
+  header #logo {
+    width: 260px;
   }
-  footer {
-    max-width: 1750px;
-    margin: auto;
+  .plan-hero-image {
+    max-width: 1725px;
   }
 }
 
