@@ -464,7 +464,24 @@ main {
     flex-direction: column;
     align-items: flex-end;
   }
+}
 
+@media screen and (min-width: 1400px) {
+  header {
+    width: 1280px;
+    margin: auto;
+  }
+  footer {
+    max-width: 1750px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .plan-hero {
+    margin-left: 13%;
+  }
+  
 }
 
 /* button hover, focus and active states */
