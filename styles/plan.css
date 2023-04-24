@@ -104,6 +104,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
   .plan-q h2 {
     line-height: 28px;
@@ -372,6 +373,96 @@ main {
   .plan-q h2 {
     width: 632px;
     font-size: 40px;
+  }
+
+  /* Ordering */
+
+  #plan {
+    margin: auto;
+    padding-bottom: 0;
+    margin-bottom: 1.3rem;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+  }
+
+  table {
+    width: 255px;
+    height: 356px;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+  }
+    tr {
+      position: relative;
+      height: 70px;
+      font-family: 'Fraunces';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: left;
+    }
+
+  #all-options {
+    width: 100%;
+  }
+
+  .plan-q h2 {
+    margin-bottom: 1.3rem;
+  }
+
+  .plan-step {
+    width: 100%;
+    cursor: pointer;
+  }
+  .plan-step:nth-child(n)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -12px;
+    bottom: 0;
+    left: 0;
+    width: 255px;
+    height: 1px;
+    border-bottom: 1px solid #83888F;
+    opacity: 0.25;
+  }
+  .plan-step:nth-last-child(1)::after {
+    visibility: hidden;
+  }
+    .plan-num {
+      padding-right: 24px;
+      color: #83888f;
+    }
+    .plan-text {
+      color: #323d4b;
+    }
+
+    .plan-text:hover {
+      color: #848990;
+    }
+
+  /* Choosing your order options  */
+  .option {
+    margin-left: 2.2rem;
+    width: 729px;
+  }
+  .option-btns {
+    width: 100%;
+  }
+  .option-btns button {
+    width: 288px;
+  }
+  .option-btns button:nth-child(2n) {
+    margin: 0 30px;
+  }
+
+  #summary-container {
+    width: 733px;
+    margin-top: -0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
 }
