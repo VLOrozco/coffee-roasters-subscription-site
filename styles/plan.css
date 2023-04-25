@@ -27,7 +27,7 @@ main {
   position: absolute;
   top: 27.8%;
   left: 8%;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .plan-hero h1 {
@@ -500,4 +500,126 @@ main {
 
 .option-btns button:focus {
   background: #FDD6BA;
+}
+
+
+/* order summary overlay */
+body {
+  position: relative;
+}
+
+.overlay-container {
+  display: none;
+}
+
+.overlay-container.active {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  z-index: -1;
+}
+  #order-summary-final {
+    margin-top: 9%;
+    padding-bottom: 24px;
+    max-width: 540px;
+    width: 90%;
+    background-color: #FEFCF7;
+    border-radius: 8px;
+    z-index: 100;
+  }
+
+  #order-summary-final div:first-child {
+    background-color: #2e3743;
+    padding: 0;
+    padding-top: 28px;
+    height: 60px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  #order-summary-final div:nth-child(2n) {
+    text-align: left;
+    width: 80%;
+    margin: 40px 24px 0;
+  }
+
+  #order-summary-final h2 {
+    text-align: left;
+    font-size: 28px;
+    color: #FFFFFF;
+    margin-left: 24px;
+  }
+  #order-summary-final h3 {
+    line-height: 40px;
+    color: #83888F;
+  }
+  #order-summary-final span {
+    color: #178784;
+  }
+
+  #order-summary-final p {
+    color: #83888F;
+    line-height: 25px;
+    margin-bottom: 24px;
+  }
+
+  .tablet-view-checkout-price {
+    display: none;
+  }
+
+  #order-summary-final button {
+    width: 100%;
+  }
+
+@media screen and (min-width: 675px) {
+  #order-summary-final {
+    margin-top: 214px;
+    padding-bottom: 56px;
+  }
+  #order-summary-final div:first-child {
+    background-color: #2e3743;
+    padding-top: 48px;
+    height: 88px;
+  }
+  #order-summary-final div:nth-child(2n) {
+    margin-top: 57px;
+    margin-left: 56px;
+  }
+  #order-summary-final h2 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-left: 56px;
+  }
+
+  #order-summary-final p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 7px;
+    margin-bottom: 47px;
+  }
+
+  .tablet-view-checkout-price {
+    display: inline;
+    font-size: 32px;
+    line-height: 36px;
+    margin-right: 13px;
+  }
+  #order-summary-final button {
+    width: 217px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #order-summary-final p {
+    width: 428px;
+  }
 }
