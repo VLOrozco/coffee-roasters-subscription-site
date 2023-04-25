@@ -16,6 +16,35 @@
   <link rel="stylesheet" href="./styles/plan.css">
 </head>
 <body>
+  <div class="overlay-container">
+    <div id="overlay"></div>
+
+    <div id="order-summary-final">
+      <div>
+        <h2>Order Summary</h2>
+      </div>
+
+      <div>
+        <h3>
+          “I drink my coffee as <span id="preference-order">Filter</span>, with a 
+          <span id="bean-type-order">Decaf</span> type of bean. 
+          <span id="quantity-order">250g</span> ground ala 
+          <span id="grind-option-order">Cafetiére</span>, sent to me 
+          <span id="deliveries-order">Every Week</span>.”
+        </h3>
+
+        <p>
+          Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. 
+        </p>
+
+        <h4 class="tablet-view-checkout-price">$14.00 / mo</h4>
+        <button id="checkout-btn" class="btn primary-btn">Checkout <span id="price"></span></button>
+      </div>
+    </div>
+    <!-- .order-summary-final end -->
+  </div>
+  <!-- .overlay-container end -->
+
   <header>
     <div id="logo">
       <img src="../images/shared/desktop/logo.svg" alt="">
