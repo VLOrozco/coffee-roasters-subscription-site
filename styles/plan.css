@@ -447,13 +447,14 @@ main {
       color: #83888f;
     }
 
-    .plan-text {
+    .plan-text a {
       color: #323d4b;
+      text-decoration: none;
     }
-      .plan-text:hover {
+      .plan-text a:hover {
         color: #848990;
       }
-      .plan-text.active {
+      .plan-text.active a {
         color: #adb0b2;
       }
 
