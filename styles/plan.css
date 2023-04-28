@@ -100,6 +100,7 @@ main {
   }
 
 .plan-q {
+  position: relative;
   margin-bottom: 32px;
   display: flex;
   justify-content: space-between;
@@ -111,8 +112,19 @@ main {
     color: #83888F;
     width: 240px;
     margin-left: 0;
+    cursor: pointer;
   }
-  .arrow {
+
+  .plan-q.active::before {
+    rotate: 0deg;
+  }
+
+  .plan-q::before {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    content: url("../images/plan/desktop/icon-arrow.svg");
+    width: 18.19px;
     rotate: 180deg;
   }
 
@@ -265,7 +277,7 @@ main {
     margin-bottom: 101px;
   }
     .option-btns button {
-      width: 223px;
+      width: 221px;
       height: 250px;
       padding: 0 24px;
     }
@@ -434,13 +446,16 @@ main {
       padding-right: 24px;
       color: #83888f;
     }
+
     .plan-text {
       color: #323d4b;
     }
-
-    .plan-text:hover {
-      color: #848990;
-    }
+      .plan-text:hover {
+        color: #848990;
+      }
+      .plan-text.active {
+        color: #adb0b2;
+      }
 
   /* Choosing your order options  */
   .option {
@@ -451,10 +466,10 @@ main {
     width: 100%;
   }
   .option-btns button {
-    width: 288px;
+    width: 228px;
   }
   .option-btns button:nth-child(2n) {
-    margin: 0 30px;
+    margin: 0 19px;
   }
 
   #summary-container {
@@ -622,4 +637,11 @@ body {
   #order-summary-final p {
     width: 428px;
   }
+}
+
+.option-btns {
+  display: none;
+}
+.option-btns.active {
+  display: block;
 }
