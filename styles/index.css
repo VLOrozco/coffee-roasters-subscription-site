@@ -203,6 +203,7 @@ button.primary-btn {
   color: #FEFCF7;
 
   cursor: pointer;
+  transition: background 0.5s ease-in-out;
 }
 
 /* Collection section  */
@@ -868,7 +869,7 @@ section h1 {
       width: 285px;
     }
 
-  #process button {
+  #process a {
     margin-left: 4.5rem;
   }
 
@@ -877,7 +878,7 @@ section h1 {
     padding: 0 55px;
     margin-bottom: 88px;
     min-width: 1145px;
-    height: 120px;
+    height: 120px; 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -905,34 +906,29 @@ section h1 {
 }
 
 @media (hover: hover) {
-  .navbar-list a:hover,
-  .navbar-list a:focus {
-    color: #333D4B;
-  }
-
-  button.primary-btn:hover {
-    background-color: #66D2CF;
-  }
-
-  .footer-content .footer-navbar-list a:hover {
-    color: #FEFCF7;
-  }
-
   .social-links a svg path:hover,
   .social-links a svg path:active {
     fill: #fdd6b9;
   }
 }
 
-button.primary-btn:focus {
-  background-color: #66D2CF;
-}
-
-.footer-content .footer-navbar-list a:focus {
-  color: #FEFCF7;
-}
-
 :focus {
   outline: none;
-  box-shadow: 0 0 0 6px #0E8784;
+  box-shadow: 0 0 0 3px #0E8784;
+}
+
+.navbar-list a:hover,
+.navbar-list a:focus {
+  color: #333D4B;
+}
+
+button.primary-btn:hover,
+button.primary-btn:focus {
+  background: #66D2CF;
+  box-shadow: none;
+}
+
+.footer-content .footer-navbar-list a:hover,
+.footer-content .footer-navbar-list a:focus {
+  color: #FEFCF7;
 }
