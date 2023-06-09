@@ -81,7 +81,7 @@ main {
   display: none;
 }
 
-#all-options {
+.all-options {
   margin-bottom: 120px;
 }
 
@@ -131,17 +131,22 @@ main {
 .option-btns button {
   border: none;
   padding: 24px 25px;
-  background-color: #F4F1EB;
+  background: #F4F1EB;
   border-radius: 8px;
   cursor: pointer;
+  transition: background 0.4s ease-in-out;
 }
   .option-btns button:nth-child(2n) {
     margin-top: 16px;
     margin-bottom: 16px;
   }
 
-  .option-btns button h3 {
+  .option-btns button h3,
+  .option-btns button p {
     color: #333D4B;
+  }
+
+  .option-btns button h3 {
     margin-bottom: 8px;
   }
 
@@ -150,7 +155,14 @@ main {
     font-family: 'Barlow';
     font-size:  16px;
     line-height: 26px;
-    color: #333D4B;
+  }
+
+  .option-btns button.bg-color {
+    background-color:#178784;
+  }
+  .option-btns button h3.color,
+  .option-btns button p.color {
+    color: #FFF;
   }
 
 #order-summary {
@@ -253,7 +265,7 @@ main {
       width: 204px;
     }
 
-  /* #all-options section @ 768px media query */
+  /* .all-options section @ 768px media query */
   #plan {
     padding-bottom: 144px;
   }
@@ -269,7 +281,7 @@ main {
     line-height: 48px;
   }
 
-  #all-options {
+  .all-options {
     margin-bottom: 144px;
   }
   .option-btns {
@@ -415,7 +427,7 @@ main {
       text-align: left;
     }
 
-  #all-options {
+  .all-options {
     width: 100%;
   }
 
@@ -446,12 +458,17 @@ main {
       padding-right: 24px;
       color: #83888f;
     }
+      .plan-num.active {
+        color: #178784;
+      }
 
     .plan-text a {
       color: #323d4b;
       text-decoration: none;
+      transition: color 0.3s ease-in-out;
     }
-      .plan-text a:hover {
+      .plan-text a:hover,
+      .plan-text a:focus {
         color: #848990;
       }
       .plan-text.active a {
@@ -499,23 +516,17 @@ main {
 }
 
 /* button hover, focus and active states */
-@media (hover: hover) {
-  .option-btns button:hover {
-    background: #FDD6BA;
-  }
-
-  .option-btns button:active {
-    background: #0E8784;
-  }
-
-  .option-btns button:active > h3,
-  .option-btns button:active > p {
-    color: #FFF;
-  }
-}
-
+.option-btns button:hover,
 .option-btns button:focus {
   background: #FDD6BA;
+  box-shadow: none;
+}
+.option-btns button.active{
+  background: #0E8784;
+}
+.option-btns button.active > h3,
+.option-btns button.active > p {
+  color: #FFF;
 }
 
 
@@ -526,10 +537,10 @@ body {
 
 .overlay-container {
   display: none;
+  position: fixed;
 }
 
 .overlay-container.active {
-  position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -552,6 +563,7 @@ body {
     background-color: #FEFCF7;
     border-radius: 8px;
     z-index: 100;
+    pointer-events: none;
   }
 
   #order-summary-final div:first-child {
@@ -594,11 +606,12 @@ body {
 
   #order-summary-final button {
     width: 100%;
+    pointer-events: auto;
   }
 
 @media screen and (min-width: 675px) {
   #order-summary-final {
-    margin-top: 214px;
+    margin-top: 5%;
     padding-bottom: 56px;
   }
   #order-summary-final div:first-child {
